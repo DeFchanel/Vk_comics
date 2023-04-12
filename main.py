@@ -90,8 +90,8 @@ def post_photo(from_group, attachments, message, access_token, group_id):
 
 if __name__ == "__main__":
     load_dotenv()
-    vk_access_token = os.environ['ACCESS_TOKEN']
-    vk_group_id = os.environ['GROUP_ID']
+    vk_access_token = os.environ['VK_ACCESS_TOKEN']
+    vk_group_id = os.environ['VK_GROUP_ID']
     try:
         message = download_comic()
         upload_url = get_upload_url(vk_access_token, vk_group_id)
